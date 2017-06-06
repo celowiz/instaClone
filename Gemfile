@@ -19,9 +19,10 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise'
-gem 'paperclip' #
+gem 'paperclip' 
 # Paperclip requires ImageMagick. Download homebrew for linux:
 # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+gem 'masonry-rails'
 
 # -|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 

@@ -1,8 +1,31 @@
-<%= image_tag @pic.image.url(:medium) %>
-<h1><%= @pic.title %></h1>
-<p><%= @pic.description %></p>
-<p>Pic by: <%= @pic.user.email %></p>
+<div id="pic_show" class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-default">
+            <div class="panel-heading pic_image">
+                <%= image_tag @pic.image.url(:medium) %>
+            </div>
+            <div class="panel-body">
+                <h1><%= @pic.title %></h1>
+                <p><%= @pic.description %></p>
+            </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-6">
+                        <p class="user">by: <%= @pic.user.email %></p>
+                    </div>
+                    <div class="col-6">
+                        <div class="button-group pull-right">
+                            <% if user_signed_in? %>
+                                <%= link_to "Edit", edit_pic_path, class: "btn btn-info" %>
+                                <%= link_to "Delete", pic_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger"  %>
+                            <% end %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <hr>
-<%= link_to "Back", root_path, class: "btn btn-default" %>
-<%= link_to "Edit", edit_pic_path, class: "btn btn-primary" %>
-<%= link_to "Delete", pic_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger"  %>
