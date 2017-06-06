@@ -23,7 +23,7 @@ gem 'paperclip'
 # Paperclip requires ImageMagick. Download homebrew for linux:
 # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
 gem 'masonry-rails'
-
+gem 'acts_as_votable'
 # -|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 
 # Use jquery as the JavaScript library
