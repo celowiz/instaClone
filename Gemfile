@@ -14,9 +14,16 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# -|-|-| Gems for this project -|-|-|
+
 gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'paperclip' #
+# Paperclip requires ImageMagick. Download homebrew for linux:
+# ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+
+# -|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
